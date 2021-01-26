@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:wght@600&display=swap');
+:root {
+  --laranja: #fc5d5c;
+  --amarelo: #fef952;
+  --cinza: #292a2d;
+  --branco: #ffffff;
+  --tamTexto: 1.625em;
+  --tamTitulo: 2.8125em;
+  --tamBotao: 1.5625em;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.rodape{
+  background-color: var(--cinza);
+  margin-top: -2px;
+}
+.item1 {
+  grid-area: linkedin;
+}
+.item2 {
+  grid-area: whatsapp;
+}
+.item3 {
+  grid-area: facebook;
+}
+.item4 {
+  grid-area: instagram;
+}
+.item5 {
+  grid-area: github;
+}
+.item6 {
+  grid-area: telegram;
+}
+.grid-social {
+  display: grid;
+  grid-template-areas:
+    "linkedin whatsapp facebook"
+    "instagram github telegram";
+    width: 40px;
+    margin-left: 50px;
+    margin-top: 40px;
+
+}
+.grid-social div img{
+  height: 72px;
+  width: 72px;
+  margin: 20px;
+}
+.redes{
+  text-align: center;
+  width: 440px;
+  color: var(--branco);
+  margin-top: -20px;
+}
+.sobre{
+  
+  text-align: center;
+  width: 568px;
+  padding-bottom: 50px;
+}
+.sobre img{
+  width: 404px;
+}
+.sobre p{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: var(--tamTexto);
+  color: var(--branco);
+  margin-bottom: 50px;
+}
+.sobre a{
+  color: var(--laranja);
+  border: 2px solid var(--laranja);
+  text-decoration: none;
+  font-size: var(--tamBotao);
+  font-family: 'Tomorrow', sans-serif;
+  padding: 10px 52px;
+}
+.rodape{
+  display: grid;
+  grid-gap: 200px;
+  grid-template-areas: "a b";
+  justify-content: center;
+}
+.copy p{
+  padding: 20px 0;
+  margin: 0 0 0 15%;
+}
